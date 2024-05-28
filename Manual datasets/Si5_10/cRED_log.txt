@@ -1,0 +1,28 @@
+Program: instamatic v2.0.0
+Data Collection Time: 2023-10-16 17:20:16
+Time Period Start: 8561.791864408
+Time Period End: 9124.270664578
+Starting angle: -56.78 degrees
+Ending angle: 55.37 degrees
+Rotation range: 112.15 degrees
+Exposure Time: 0.500 s
+Acquisition time: 0.799 s
+Total time: 562.479 s
+Spot Size: 1
+Camera length: 1200 mm
+Pixelsize: 0.0036496 px/Angstrom
+Physical pixelsize: 0.055 um
+Wavelength: 0.025079 Angstrom
+Stretch amplitude: 0.0 %
+Stretch azimuth: 0.0 degrees
+Rotation axis: 0.0 radians
+Oscillation angle: 0.1593 degrees
+Number of frames: 424
+Stage start: X -286662 | Y 136901 | Z -24166 | A -57.04 | B  0.00
+Stage end:   X -287068 | Y 169399 | Z -24166 | A 55.37 | B  0.00
+Image interval: every 5 frames an image with defocus 25131 (t=0.01 s).
+Number of images: 140
+
+References:
+ - Instamatic (v.2.0.0), Zenodo, https://doi.org/10.5281/zenodo.1090388
+ - J. Appl. Cryst. (2018). 51, 1652–1661, https://doi.org/10.1107/S1600576718015145
