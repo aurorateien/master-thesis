@@ -1,0 +1,16 @@
+Peak Search:
+Peak Radius: 2 pix
+Background Radius: 5 pix
+Threshold: 50 
+
+3D Peak Merging:
+Resolution range: Min: 0 Å-1, Max: 1.3 Å-1
+Intensity range: MIn: 0, Max: 60 000
+Min 3D Distance: 5 pix
+Max 2D Distance: 5 pix
+Max 3D Length: 30 pix
+Intensity in frames: Point
+Intensity through frames: Maximum
+
+Found unit cell: (14.0777, 13.9299, 7.57298, 89.3897, 91.1999, 95.3511)
+Highest symmetry space group found: Cmmm (no. 65)
