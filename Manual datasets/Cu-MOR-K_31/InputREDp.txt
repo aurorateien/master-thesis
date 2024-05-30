@@ -14,3 +14,4 @@ Intensity through frames: Maximum
 
 Found unit cell: (14.0777, 13.9299, 7.57298, 89.3897, 91.1999, 95.3511)
 Highest symmetry space group found: Cmmm (no. 65)
+Unit cell after transformation: (18.86, 20.71, 7.57, 88.77, 90.44, 90.61)
