@@ -100,15 +100,14 @@ def fixDistortion(options,image,directXY):
     newImage = apply_transform_to_image(newImage[::-1,:], c2e, center)[::-1,:]
     fixFixImage = fixFixCross(newImage)
     
-    return newImage
+    return fixFixImage
 
 def fix_cross_interpol(image, factor):
     half_x = image.shape[0]//2
     half_y = image.shape[1]//2
     factor = 1/factor
     center_factor = factor
-    larger_image = image
-    #make_larger_image(image, half_x, half_y)
+    larger_image = make_larger_image(image, half_x, half_y)
     for n in range(4):
         larger_image = fix_one_quadrant(image, larger_image, factor)
         larger_image = larger_image[::-1]
