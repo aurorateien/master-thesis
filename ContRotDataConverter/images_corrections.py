@@ -63,11 +63,6 @@ def fixCross(image, factor):
         newImage = newImage.T
     return newImage
 
-def newFixCross(img):
-    img[255:257, :] = np.array(( 0.5*(img[254, :] + img[257, :]), 0.5*(img[254, :] + img[257, :])))
-    img[:, 255:257] = np.array((0.5*(img[:,254] + img[:,257]), 0.5*(img[:,254] + img[:,257]))).T
-    return img
-
 def fixFixCross(newImage):
     """
     Removes added pixels in cross
@@ -85,10 +80,9 @@ def fixDistortion(options,image,directXY):
     radianAzimuth = np.radians(options["strechazimuth"])
     stretch = options["strechamp"] * 0.01
                 
-    newImage = newFixCross(image) # ,options["factor"]
+    newImage = fixCross(image,options["factor"]) 
                 
     center = np.copy(directXY)
-    '''
     if directXY[0]>(255):
         center[0] += 1
     if directXY[0]>(256):
@@ -102,10 +96,9 @@ def fixDistortion(options,image,directXY):
         center[1] += 2
     if directXY[1]>(257):
         center[1] += 1
-    '''
     c2e = affine_transform_circle_to_ellipse(radianAzimuth, stretch)
     newImage = apply_transform_to_image(newImage[::-1,:], c2e, center)[::-1,:]
-    #fixFixImage = fixFixCross(newImage)
+    fixFixImage = fixFixCross(newImage)
     
     return newImage
 

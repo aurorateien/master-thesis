@@ -25,7 +25,7 @@ def read_and_write_images(tiffFile, header, options, angle, rotSpeed,
         if options["inter_cross"]:
             newImage = fix_cross_interpol(image, options["factor"])
         else:
-            newImage = newFixCross(image)#, options["factor"]
+            newImage = fixCross(image, options["factor"])
 
         with open(options["path"]+writeFileName, "wb") as f:
             for n in range(0,256):
